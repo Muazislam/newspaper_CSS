@@ -10,13 +10,61 @@
 
 /******************************************************/
 
+/*The parent div tag with the --> nav-tag, --> ul tag, --> li tag in it on line 21*/
 .container {
     font-size: 1.5rem;
     /* This sets the font-size of the container to 22px. */
     font-family: Lora, serif;
-    height: 100 px;
+    height: 100px;
     /*this is height of container from inside to 100 px. The container size from toop to bottom increases due to this */
     border: 3px solid black;
     /* The container will take the full width of the page, i.e, 100% of the width of the page. */
     width: 100%;
+}
+
+/******************************************************/
+
+
+
+/* This deals with the div box that keeps the content inside the navigation bar.
+It is positioned relative to the container.*/
+
+.navbar {
+    display: flex;
+    /*This is used to make the content inside the navbar display as flex, i.e. in row; not in column */
+    justify-content: center;
+    /*Centers the content horizontally*/
+    align-items: center;
+    /*Centers the content vertically*/
+    height: 100%;
+    /*takes full height of parent from top to bottom*/
+    width: 100%;
+    /*takes full width of parent from left to right*/
+    margin: auto;
+    /*centers elements horizontally*/
+}
+
+/******************************************************/
+
+
+
+/* Deals with positioning the content (links elements) inside the nav bar. It deals with their position.
+It doesn't deal with their color and appearnce*/
+
+.nav-links {
+    position: relative;
+    /* The container will be positioned relative to its parent. */
+    display: flex;
+    list-style-type: none;
+    /*removes the bullets from the list items*/
+    justify-content: space-between;
+    gap: 130px;
+    flex-wrap: wrap;
+    /* Wraps items to a new line if they exceed the width */
+}
+
+.section-link {
+    text-decoration: none;
+    color: grey;
+    font-weight: bold;
 }
