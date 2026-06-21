@@ -1,75 +1,22 @@
-.page .brand { /* Targets an element with class 'brand' inside an element with class 'page' */
-    text-align: center; /* Centers the text horizontally */
-    font-family: serif; /* Uses a serif font family */
-} /* Closes the block */
+/* Header (Logo) of website */
+.page .brand {
+    text-align: center;
+    font-family: Lora, serif;
+    font-size: 3rem;
+    position: relative;
+    /* The element is positioned according to the normal flow of the document. And it takes up orignal space, and surrounding elements treat the space it took as if it never moved. */
+    bottom: -20px;
+}
 
-:root { /* Selects the root element of the document (usually <html>) to define global variables */
-  --nav-color: #675d50; /* Defines a CSS variable for the navigation background color */
-  --nav-text: #fff; /* Defines a CSS variable for the navigation text color */
-  --primary-color: #f3deba; /* Defines a CSS variable for the primary color */
-  --secondary-color: #abc4aa; /* Defines a CSS variable for the secondary color */
-  --hover-color: #a9907e; /* Defines a CSS variable for the hover state color */
-} /* Closes the block */
+/******************************************************/
 
-*::before, /* Selects the ::before pseudo-element of every element */
-*::after { /* Selects the ::after pseudo-element of every element */
-    padding: 0; /* Removes default padding */
-    margin: 0; /* Removes default margin */
-    box-sizing: border-box; /* Ensures padding and borders are included in the element's total width and height (fixed syntax) */
-} /* Closes the block */
-
-.section-link{ /* Selects any element with the class 'section-link' */
-    text-decoration: none; /* Removes text decorations, such as underlines from links */
-} /* Closes the block */
-
-.container { /* Selects any element with the class 'container' */
-    background-color: var(--nav-color); /* Sets the background color using the variable --nav-color */
-    font-size: 1.5rem; /* Sets the font size to 1.5 times the root font size */
-    font-family: sans-serif; /* Uses a sans-serif font family */
-    height: 100px; /* Sets a fixed height of 100 pixels */
-} /* Closes the block */
-
-.navbar{ /* Selects any element with the class 'navbar' */
-    display: flex; /* Uses Flexbox for layout */
-    align-items: center; /* Centers the child elements vertically */
-    justify-content: center; /* Centers the child elements horizontally */
-    height: 100%; /* Takes up 100% of the parent container's height */
-    width: 80%; /* Takes up 80% of the parent container's width */
-    margin: auto; /* Centers the element horizontally within its parent container */
-} /* Closes the block */
-
-.navbar .nav-links { /* Selects the element with class 'nav-links' inside '.navbar' */
-    display: flex; /* Uses Flexbox to lay out child elements in a row */
-} /* Closes the block */
-
-.container .navbar { /* Selects '.navbar' inside '.container' (has higher specificity) */
-    justify-content: space-between; /* Distributes child elements evenly with space between them */
-} /* Closes the block */
-
-.navbar .nav-links .site-section { /* Selects '.site-section' inside '.nav-links' inside '.navbar' */
-    list-style-type: none; /* Removes list markers, such as bullet points */
-} /* Closes the block */
-
-.container .navbar .nav-links .site-section { /* Selects the same as above but with higher specificity */
-    padding: 10px; /* Adds 10 pixels of padding on all sides */
-    margin: 0 10px; /* Removes top/bottom margin and adds 10 pixels of left/right margin */
-} /* Closes the block */
-
-.navbar .section-link { /* Selects '.section-link' inside '.navbar' */
-    color: var(--nav-text); /* Sets the text color using the variable --nav-text (added missing semicolon) */
-    font-weight: bold; /* Makes the text bold */
-} /* Closes the block */
-
-.navbar .section-link:hover{ /* Selects the hover state of '.section-link' inside '.navbar' */
-    color: var(--secondary-color); /* Changes text color to the --secondary-color variable on hover (added missing semicolon) */
-} /* Closes the block */
-
-@media screen and (min-width: 390px) and (max-width: 767px) { /* Applies styles only for screen widths between 390px and 767px inclusive */
-    .container { /* Selects any element with the class 'container' within this media query */
-        height: 100%; /* Sets height to 100% instead of 100px to accommodate wrapped content */
-    } /* Closes the block */
-
-    .container .navbar { /* Selects '.navbar' inside '.container' within this media query */
-        flex-direction: column; /* Changes Flexbox layout to stack items vertically instead of horizontally */
-    } /* Closes the block */
-} /* Closes the media query block */
+.container {
+    font-size: 1.5rem;
+    /* This sets the font-size of the container to 22px. */
+    font-family: Lora, serif;
+    height: 100 px;
+    /*this is height of container from inside to 100 px. The container size from toop to bottom increases due to this */
+    border: 3px solid black;
+    /* The container will take the full width of the page, i.e, 100% of the width of the page. */
+    width: 100%;
+}

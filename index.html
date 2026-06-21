@@ -18,11 +18,16 @@
 
 
 
+    <!-- The "container" class acts as the main wrapper. It generally controls the overall dimensions (like taking 100% width, fixed height) and background styling for the entire header bar. -->
     <div class="container">
+        <!-- The "navbar" class is meant to act as a layout container. It usually uses flexbox to center its inner content (<nav>) vertically and restrict the inner width (e.g., 80% width) so links don't stretch to the very edges of the screen. -->
         <div class="navbar">
             <nav>
+                <!-- The "nav-links" class targets the list itself. It is typically set as a flex container to force the list items (which normally stack vertically) to sit horizontally next to each other in a row. -->
                 <ul class="nav-links">
+                    <!-- The "site-section" class is applied to each individual list item. It is responsible for removing the default HTML bullet points and adding margin/padding so the links have space between them. -->
                     <li class="site-section">
+                        <!-- The "section-link" class styles the clickable anchor text. It usually removes the default link underline, sets the text color, makes the text bold, and handles the hover color changes. -->
                         <a href="#" class="section-link">Politics</a>
                     </li>
                     <li class="site-section">
