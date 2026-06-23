@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The News Times</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
@@ -14,49 +14,23 @@
       <h1 class="brand">The News Times</h1>
     </header>
 
-
-
-
-
-
-    <!-- The "container" class acts as the main wrapper. It generally controls the overall dimensions (like taking 100% width, fixed height) and background styling for the entire header bar. -->
-    <div class="container">
-      <!-- The "navbar" class is meant to act as a layout container. It usually uses flexbox to center its inner content (<nav>) vertically and restrict the inner width (e.g., 80% width) so links don't stretch to the very edges of the screen. -->
-      <div class="navbar">
-        <nav>
-          <!-- The "nav-links" class targets the list itself. It is typically set as a flex container to force the list items (which normally stack vertically) to sit horizontally next to each other in a row. -->
-          <ul class="nav-links">
-            <!-- The "site-section" class is applied to each individual list item. It is responsible for removing the default HTML bullet points and adding margin/padding so the links have space between them. -->
-            <li class="site-section">
-              <!-- The "section-link" class styles the clickable anchor text. It usually removes the default link underline, sets the text color, makes the text bold, and handles the hover color changes. -->
-              <a href="#" class="section-link">Politics</a>
-            </li>
-            <li class="site-section">
-              <a href="#" class="section-link">Technology</a>
-            </li>
-            <li class="site-section">
-              <a href="#" class="section-link">Local</a>
-            </li>
-            <li class="site-section">
-              <a href="#" class="section-link">Opinion</a>
-            </li>
-            <li class="site-section">
-              <a href="#" class="section-link">Sports</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
+    <ul class="nav-links">
+      <li class="site-section">
+        <a href="#" class="section-link">Politics</a>
+      </li>
+      <li class="site-section">
+        <a href="#" class="section-link">Technology</a>
+      </li>
+      <li class="site-section">
+        <a href="#" class="section-link">Local</a>
+      </li>
+      <li class="site-section">
+        <a href="#" class="section-link">Opinion</a>
+      </li>
+      <li class="site-section">
+        <a href="#" class="section-link">Sports</a>
+      </li>
+    </ul>
 
     <article class="story story-1">
       <h2 class="article-title">Student Learns HTML</h2>
@@ -76,7 +50,7 @@
     </article>
     <article class="story story-2">
       <h2 class="article-title">BREAKING: Luna is Adorable</h2>
-      <img class="article-img" src="http://pets-images.dev-apis.com/pets/dog25.jpg" alt="Luna in a suitcase">
+      <img class="article-img" src="http://pets-images.dev-apis.com/pets/dog25.jpg" alt="Luna in a suitcase" />
       <p class="article-text">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
         dolores? Illo dolores, rerum iste aut porro doloribus fugit itaque
@@ -166,7 +140,6 @@
         at erat pellentesque adipiscing commodo elit.
       </p>
     </article>
-
   </div>
 </body>
 
