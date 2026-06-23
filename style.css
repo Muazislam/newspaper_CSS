@@ -15,7 +15,7 @@
     font-size: 1.5rem;
     /* This sets the font-size of the container to 22px. */
     font-family: Lora, serif;
-    min-height: 100px;
+    min-height: 80px;
     /*this is height of container from inside to 100 px. The container size from toop to bottom increases due to this */
     border: 3px solid black;
     /* The container will take the full width of the page, i.e, 100% of the width of the page. */
@@ -64,8 +64,33 @@ It doesn't deal with their color and appearnce*/
     /* Wraps items to a new line if they exceed the width */
 }
 
+/******************************************************/
+
+/*Link's font colors and font features*/
 .section-link {
     text-decoration: none;
     color: grey;
     font-weight: bold;
+}
+
+/******************************************************/
+.section-link:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+/****************************************************************************************************************/
+/*Content for the Article section*/
+
+.stories-container {
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid black;
+    gap: 0px;
+}
+
+.story {
+    border: 2px solid black;
+    width: 550px;
+    flex-direction: column;
 }
