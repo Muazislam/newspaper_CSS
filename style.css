@@ -15,7 +15,7 @@
     font-size: 1.5rem;
     /* This sets the font-size of the container to 22px. */
     font-family: Lora, serif;
-    height: 100px;
+    min-height: 100px;
     /*this is height of container from inside to 100 px. The container size from toop to bottom increases due to this */
     border: 3px solid black;
     /* The container will take the full width of the page, i.e, 100% of the width of the page. */
@@ -42,6 +42,7 @@ It is positioned relative to the container.*/
     /*takes full width of parent from left to right*/
     margin: auto;
     /*centers elements horizontally*/
+
 }
 
 /******************************************************/
@@ -51,7 +52,7 @@ It is positioned relative to the container.*/
 /* Deals with positioning the content (links elements) inside the nav bar. It deals with their position.
 It doesn't deal with their color and appearnce*/
 
-.nav-links {
+.container .navbar .nav-links {
     position: relative;
     /* The container will be positioned relative to its parent. */
     display: flex;
