@@ -1,11 +1,18 @@
-/* Header (Logo) of website */
-.page .brand {
+.page {
+    display: grid;
+    grid-template-areas:
+        "brand           brand           brand           brand           brand           brand"
+        "container       container       container       container       container       container"
+        "story-1         story-1         story-2         story-2         story-3         story-3"
+        "story-4         story-4         story-5         story-5         story-5         story-5";
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.brand {
     text-align: center;
-    font-family: Lora, serif;
-    font-size: 3rem;
-    position: relative;
-    /* The element is positioned according to the normal flow of the document. And it takes up orignal space, and surrounding elements treat the space it took as if it never moved. */
-    bottom: -20px;
+    /* Centers the text horizontally */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /******************************************************/
@@ -15,7 +22,7 @@
     font-size: 1.5rem;
     /* This sets the font-size of the container to 22px. */
     font-family: Lora, serif;
-    min-height: 80px;
+    min-height: 100px;
     /*this is height of container from inside to 100 px. The container size from toop to bottom increases due to this */
     border: 3px solid black;
     /* The container will take the full width of the page, i.e, 100% of the width of the page. */
@@ -64,33 +71,8 @@ It doesn't deal with their color and appearnce*/
     /* Wraps items to a new line if they exceed the width */
 }
 
-/******************************************************/
-
-/*Link's font colors and font features*/
 .section-link {
     text-decoration: none;
     color: grey;
     font-weight: bold;
-}
-
-/******************************************************/
-.section-link:hover {
-    color: black;
-    text-decoration: underline;
-}
-
-/****************************************************************************************************************/
-/*Content for the Article section*/
-
-.stories-container {
-    display: flex;
-    flex-wrap: wrap;
-    border: 3px solid black;
-    gap: 0px;
-}
-
-.story {
-    border: 2px solid black;
-    width: 550px;
-    flex-direction: column;
 }
